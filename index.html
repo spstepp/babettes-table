@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Babette's Table — A Bavarian Kitchen, 1956</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  /* ── Variables ─────────────────────────────────────────────── */
+  :root {
+    --cream:       #FAF6F0;
+    --cream-mid:   #F2EDE4;
+    --near-black:  #1C1008;
+    --sepia:       #5C4033;
+    --sepia-light: #7A5C4A;
+    --gold:        #B8860B;
+    --gold-light:  #D4A017;
+    --white:       #FFFFFF;
+    --mid-gray:    #555555;
+    --rule-gray:   #D4C9BC;
+    --bg-section:  #FDFAF6;
+  }
+
+  /* ── Reset ─────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--cream);
+    color: var(--near-black);
+    line-height: 1.75;
+    font-size: 20px;
+  }
+
+  /* ── Utility ────────────────────────────────────────────────── */
+  .gold-rule {
+    width: 60px; height: 1px;
+    background: var(--gold);
+    margin: 1.2rem auto;
+    border: none;
+  }
+  .gold-rule.wide { width: 120px; }
+  .gold-rule.left { margin-left: 0; }
+
+  .diamond {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    vertical-align: middle;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.2rem;
+    letter-spacing: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  /* ── Navigation ─────────────────────────────────────────────── */
+  nav {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule-gray);
+    position: sticky; top: 0; z-index: 100;
+    padding: 0.75rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.15rem;
+    color: var(--sepia);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-links {
+    display: flex; gap: 2rem; list-style: none;
+  }
+  .nav-links a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    color: var(--sepia-light);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* ── Hero ───────────────────────────────────────────────────── */
+  .hero {
+    background: var(--cream);
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    border-bottom: 1px solid var(--rule-gray);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Subtle texture overlay */
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 39px, var(--rule-gray) 39px, var(--rule-gray) 40px);
+    opacity: 0.18;
+    pointer-events: none;
+  }
+
+  .hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+
+  .hero-eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    color: var(--sepia);
+    line-height: 1.15;
+    margin-bottom: 0.3rem;
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--sepia-light);
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-hook {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--near-black);
+    max-width: 520px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-hook em { color: var(--sepia); font-style: normal; }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background: var(--sepia);
+    color: var(--cream);
+  }
+  .btn-primary:hover {
+    background: var(--near-black);
+    color: var(--gold-light);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--sepia);
+    border: 1px solid var(--rule-gray);
+    margin-left: 1rem;
+  }
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* ── Content sections: WHITE background for readability ─────── */
+  .section-white {
+    background: var(--white);
+    padding: 4rem 2rem;
+  }
+  .section-cream {
+    background: var(--cream);
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--rule-gray);
+    border-bottom: 1px solid var(--rule-gray);
+  }
+  .section-bg {
+    background: var(--bg-section);
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--rule-gray);
+  }
+
+  .container { max-width: 780px; margin: 0 auto; }
+  .container-narrow { max-width: 620px; margin: 0 auto; }
+  .container-wide { max-width: 1000px; margin: 0 auto; }
+
+  /* ── Section headers ────────────────────────────────────────── */
+  .section-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .section-title {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: var(--sepia);
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+  .section-title.dark { color: var(--near-black); }
+
+  /* ── The Story ──────────────────────────────────────────────── */
+  .story-text {
+    font-size: 1.1rem;
+    color: var(--near-black);
+    line-height: 1.85;
+    margin-bottom: 1.2rem;
+  }
+  .story-text em {
+    font-style: italic;
+    color: var(--sepia);
+  }
+
+  /* ── Book details box ───────────────────────────────────────── */
+  .book-card {
+    background: var(--cream);
+    border: 1px solid var(--rule-gray);
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+    color: var(--near-black);
+    line-height: 1.8;
+  }
+  .book-card strong { color: var(--sepia); }
+
+  /* ── Products grid ──────────────────────────────────────────── */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .product-card {
+    background: var(--white);
+    border: 1px solid var(--rule-gray);
+    padding: 2rem;
+    position: relative;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .product-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 4px 24px rgba(92,64,51,0.08);
+  }
+  .product-badge {
+    position: absolute; top: 1.2rem; right: 1.2rem;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+  }
+  .product-title {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.4rem;
+    color: var(--near-black);
+    margin-bottom: 0.2rem;
+  }
+  .product-subtitle {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--sepia-light);
+    margin-bottom: 1rem;
+  }
+  .product-desc {
+    font-size: 0.9rem;
+    color: var(--near-black);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  .product-price {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.5rem;
+    color: var(--sepia);
+    margin-bottom: 1rem;
+  }
+  .product-price span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    color: var(--mid-gray);
+    font-style: italic;
+  }
+  .recipe-list {
+    list-style: none;
+    font-size: 0.85rem;
+    color: var(--near-black);
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+  }
+  .recipe-list li::before {
+    content: '·  ';
+    color: var(--gold);
+    font-weight: bold;
+  }
+
+  /* ── Pull quote ─────────────────────────────────────────────── */
+  .pull-quote {
+    border-left: 3px solid var(--gold);
+    padding: 1rem 2rem;
+    margin: 2.5rem 0;
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--near-black);
+    line-height: 1.6;
+    background: var(--cream);
+  }
+
+  /* ── Recipe preview ─────────────────────────────────────────── */
+  .recipe-preview {
+    background: var(--white);
+    border: 1px solid var(--rule-gray);
+    padding: 2.5rem;
+    max-width: 680px;
+    margin: 2rem auto 0;
+  }
+  .recipe-num-label {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .recipe-title-display {
+    font-family: 'IM Fell English', serif;
+    font-size: 2rem;
+    color: var(--near-black);
+    margin-bottom: 0.15rem;
+    line-height: 1.2;
+  }
+  .recipe-en {
+    font-style: italic;
+    color: var(--sepia-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  .recipe-divider {
+    width: 100%; height: 1px;
+    background: var(--rule-gray);
+    margin: 1rem 0;
+  }
+  .recipe-body-preview {
+    font-size: 0.95rem;
+    color: var(--near-black);
+    line-height: 1.75;
+    font-style: italic;
+  }
+  .recipe-hist {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+  .hist-key {
+    font-weight: 600;
+    color: var(--sepia);
+    line-height: 1.5;
+  }
+  .hist-val {
+    font-style: italic;
+    color: var(--near-black);
+    line-height: 1.5;
+  }
+
+  /* ── Dedication ─────────────────────────────────────────────── */
+  .dedication {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .dedication-text {
+    font-family: 'IM Fell English', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--sepia);
+    line-height: 2;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ── Newsletter ─────────────────────────────────────────────── */
+  .newsletter-wrap {
+    background: var(--sepia);
+    color: var(--cream);
+    padding: 3.5rem 2rem;
+    text-align: center;
+  }
+  .newsletter-wrap .section-title { color: var(--cream); margin-bottom: 0.5rem; }
+  .newsletter-sub {
+    color: var(--cream-mid);
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    opacity: 0.9;
+  }
+  .newsletter-form {
+    display: flex; gap: 0; max-width: 440px; margin: 0 auto;
+  }
+  .newsletter-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    border: 1px solid var(--rule-gray);
+    background: var(--white);
+    color: var(--near-black);
+    outline: none;
+  }
+  .newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--gold);
+    color: var(--white);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none; cursor: pointer;
+    transition: background 0.2s;
+  }
+  .newsletter-form button:hover { background: var(--near-black); }
+  .newsletter-note {
+    font-size: 0.78rem;
+    color: var(--cream-mid);
+    margin-top: 0.75rem;
+    opacity: 0.75;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── Footer ─────────────────────────────────────────────────── */
+  footer {
+    background: var(--near-black);
+    color: var(--cream-mid);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 2;
+  }
+  footer a { color: var(--gold-light); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .footer-brand {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.1rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .footer-handles {
+    display: flex; gap: 1.5rem; justify-content: center;
+    flex-wrap: wrap; margin: 0.75rem 0;
+  }
+
+  /* ── Fade-in on load ────────────────────────────────────────── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeUp 0.7s ease both; }
+  .fade-in-2 { animation: fadeUp 0.7s ease 0.15s both; }
+  .fade-in-3 { animation: fadeUp 0.7s ease 0.3s both; }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .btn-secondary { display: none; }
+    .newsletter-form { flex-direction: column; }
+    .newsletter-form button { width: 100%; }
+    .recipe-hist { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-brand">Babette's Table</a>
+  <ul class="nav-links">
+    <li><a href="#story">The Story</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#recipe">Recipes</a></li>
+    <li><a href="#newsletter">Newsletter</a></li>
+  </ul>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow fade-in">A Bavarian Kitchen · 1956</p>
+    <h1 class="hero-title fade-in-2">Babette's<br>Table</h1>
+    <p class="hero-subtitle fade-in-2">Old recipes. Real stories.</p>
+    <hr class="gold-rule fade-in-2">
+    <p class="hero-hook fade-in-3">
+      "This cookbook was a 1956 wedding gift to my mother.<br>
+      <em>She's gone now — but her recipes aren't.</em>"
+    </p>
+    <div class="fade-in-3">
+      <a href="#products" class="btn btn-primary">Browse the Collection</a>
+      <a href="#story" class="btn btn-secondary">Read the Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── The Story ──────────────────────────────────────────────────────── -->
+<section class="section-white" id="story">
+  <div class="container">
+    <p class="section-label">The Story</p>
+    <h2 class="section-title">A book, a wedding,<br>and the women who kept things together</h2>
+    <hr class="gold-rule left wide">
+
+    <p class="story-text">
+      In 1956, in postwar Bavaria, a woman named <em>Erna Paul</em> received a cookbook as a wedding gift. 
+      It was <em>Bayerisches Kochbuch</em> — Bavarian Cookbook — by Maria Hofmann, then in its 26th edition. 
+      A standard reference for German home cooks. A serious book, for a serious kitchen.
+    </p>
+
+    <p class="story-text">
+      The book is written in old Fraktur typeface — the angular Gothic script that most people today cannot read. 
+      Erna could read it. She cooked from it for decades. She brought it with her when she came to the United States, 
+      and she kept it her whole life.
+    </p>
+
+    <div class="pull-quote">
+      Behind Erna was Babette Martin — her grandmother, the steady and loving presence who supported her 
+      through a genuinely difficult young life. This project is named for her.
+    </div>
+
+    <p class="story-text">
+      I am Erna's son. I cannot read Fraktur. But I can translate it — carefully, by hand, with attention 
+      to what each dish meant in its time and place. That is what Babette's Table is: a translation project, 
+      a history project, and a cooking project, all from a single book that never leaves the house.
+    </p>
+
+    <div class="book-card">
+      <strong>The Book</strong><br>
+      <em>Bayerisches Kochbuch</em> · Maria Hofmann<br>
+      26th edition · Birken-Verlag, Munich · 1956<br>
+      Originally given to Erna Paul as a wedding gift.<br>
+      Written in printed Fraktur typeface.
+    </div>
+
+    <div class="dedication">
+      <div class="ornament">◆ &nbsp; ◆ &nbsp; ◆</div>
+      <p class="dedication-text">
+        For Erna Paul, who received this book on her wedding day.<br>
+        And for Babette Martin, Erna's grandmother,<br>
+        who kept the family together.
+      </p>
+      <div class="ornament">◆ &nbsp; ◆ &nbsp; ◆</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Products ───────────────────────────────────────────────────────── -->
+<section class="section-bg" id="products">
+  <div class="container-wide">
+    <div style="text-align:center; margin-bottom: 0.5rem;">
+      <p class="section-label">The Collection</p>
+      <h2 class="section-title">Translated recipes,<br>with their stories intact</h2>
+      <hr class="gold-rule">
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Vol. 1 -->
+      <div class="product-card">
+        <span class="product-badge">Full Collection</span>
+        <p class="recipe-num-label">Soups · Vol. 1</p>
+        <h3 class="product-title">Babette's Table:<br>Soups, Vol. 1</h3>
+        <p class="product-subtitle">A Bavarian Kitchen — Ten Recipes</p>
+        <p class="product-desc">
+          Ten recipes from the Soups chapter of the 1956 Bayerisches Kochbuch — 
+          translated, US-adapted, and annotated with historical headnotes and a 
+          week-of-meals grid for each dish.
+        </p>
+        <ul class="recipe-list">
+          <li>Clear Beef Broth (Fleischbrühe)</li>
+          <li>Bone Broth (Knochenbrühe)</li>
+          <li>Root Vegetable Broth (Wurzelbrühe)</li>
+          <li>Bavarian Tomato Soup (Tomatensuppe)</li>
+          <li>Dried Mushroom Soup (Pilzsuppe)</li>
+          <li>Lentil, Pea & Bean Soup</li>
+          <li>Bavarian Potato Soup (Kartoffelsuppe)</li>
+          <li>Black Bread Soup (Brotsuppe)</li>
+          <li>Semolina Dumpling Soup (Grießnockerlsuppe)</li>
+          <li>Cold Fruit Soup (Fruchtsuppe)</li>
+        </ul>
+        <p class="product-price">$12.00 <span>· instant PDF download</span></p>
+        <a href="https://www.etsy.com/shop/BabettesTable" class="btn btn-primary" style="width:100%; text-align:center; display:block;">
+          Get on Etsy
+        </a>
+      </div>
+
+      <!-- Sampler -->
+      <div class="product-card">
+        <span class="product-badge" style="background:var(--sepia-light);">Sampler</span>
+        <p class="recipe-num-label">Soups · Sampler</p>
+        <h3 class="product-title">Babette's Table:<br>Soups Sampler</h3>
+        <p class="product-subtitle">Three Recipes — A Taste of the Collection</p>
+        <p class="product-desc">
+          Three recipes from the collection — one broth, one hearty soup, and one 
+          that will surprise you. The full story and format of Vol. 1, in a 
+          shorter introduction.
+        </p>
+        <ul class="recipe-list">
+          <li>Clear Beef Broth (Fleischbrühe)</li>
+          <li>Bavarian Potato Soup (Kartoffelsuppe)</li>
+          <li>Cold Fruit Soup (Fruchtsuppe)</li>
+        </ul>
+        <div style="height: 3.15rem;"></div>
+        <p class="product-price">$3.00 <span>· instant PDF download</span></p>
+        <a href="https://www.etsy.com/shop/BabettesTable" class="btn btn-secondary" style="width:100%; text-align:center; display:block;">
+          Get on Etsy
+        </a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:2rem; font-style:italic; font-size:0.9rem; color:var(--sepia-light);">
+      Potato Dishes, Vol. 2 · Desserts, Vol. 3 · and more — coming soon.
+    </p>
+  </div>
+</section>
+
+<!-- ── Recipe Preview ─────────────────────────────────────────────────── -->
+<section class="section-white" id="recipe">
+  <div class="container">
+    <p class="section-label" style="text-align:center;">From the Collection</p>
+    <h2 class="section-title" style="text-align:center;">A recipe, with its story</h2>
+    <hr class="gold-rule">
+
+    <div class="recipe-preview">
+      <p class="recipe-num-label">Grundrezept 85</p>
+      <h3 class="recipe-title-display">Fruchtsuppe</h3>
+      <p class="recipe-en">Cold Fruit Soup — the recipe that will confuse and then delight you</p>
+      <div class="recipe-divider"></div>
+
+      <p class="recipe-body-preview">
+        This is the recipe that Americans stare at. Cold soup. Made from fruit. Served before a meal, 
+        not after. Yes. This is what it is, and it is very good, and Maria Hofmann puts it in the soup 
+        chapter without any sense that an explanation is required, because in Bavaria in 1956 it needed none.
+      </p>
+
+      <p class="recipe-body-preview" style="margin-top:0.8rem;">
+        My mother made this in summer, when stone fruit was cheap and the kitchen was too hot to cook 
+        properly. Cold plum soup. Cold cherry soup with a little cream stirred in. She served it in the 
+        small glasses she kept for schnapps and told us to drink it slowly. It is a first course. It is 
+        not a dessert. The distinction mattered to her.
+      </p>
+
+      <div class="recipe-divider"></div>
+      <div class="recipe-hist">
+        <span class="hist-key">Historical note:</span>
+        <span class="hist-val">Cold fruit soups appear across Central and Eastern European cuisines — German, Hungarian, 
+        Polish, Scandinavian. In Bavaria they were a practical seasonal starter, not a novelty. 
+        Stone fruit was abundant in summer; a cold soup required no oven in July.</span>
+      </div>
+      <div class="recipe-divider"></div>
+      <p style="text-align:right; font-style:italic; font-size:0.8rem; color:var(--mid-gray);">
+        Full recipe — ingredients, method, and week-of-meals grid — in the Soups collection.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Newsletter ─────────────────────────────────────────────────────── -->
+<section class="newsletter-wrap" id="newsletter">
+  <div class="container-narrow">
+    <p class="section-label" style="color: var(--gold-light);">Newsletter</p>
+    <h2 class="section-title" style="color:var(--cream);">One recipe. One story.<br>Once a week.</h2>
+    <p class="newsletter-sub">Free. No spam. Unsubscribe whenever.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="your@email.com" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="newsletter-note">Join on Substack: babettestable.substack.com</p>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────── -->
+<footer>
+  <p class="footer-brand">Babette's Table</p>
+  <p style="font-style:italic; color: #B8A090; margin-bottom:0.5rem;">
+    Old recipes. Real stories. A Bavarian kitchen, 1956.
+  </p>
+  <div class="footer-handles">
+    <a href="#">Etsy: BabettesTable</a>
+    <a href="#">Substack: babettestable</a>
+    <a href="#">Pinterest: babettestable</a>
+    <a href="#">TikTok: @babettestable</a>
+  </div>
+  <hr style="border:none; border-top:1px solid #3A2A20; margin:1rem auto; max-width:400px;">
+  <p>babettes-table.com &nbsp;·&nbsp; All rights of translation and adaptation reserved</p>
+</footer>
+
+</body>
+</html>

@@ -656,6 +656,38 @@
       .volume-title { font-size: 1.55rem; }
     }
 
+
+    .buy-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      padding: 0.7rem 1rem;
+      background: var(--near-black);
+      border-top: 1px solid var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+    .buy-bar span { color: var(--cream); }
+    .buy-bar a {
+      color: var(--near-black);
+      background: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.45rem 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+    .buy-bar a:hover { background: var(--cream); }
+    body { padding-bottom: 3.5rem; }
+
   </style>
 </head>
 <body>
@@ -681,7 +713,7 @@
     <p class="volume-sub">Three recipes from the collection — one broth, one hearty soup, and one that will surprise you. The full story and format of Vol. 1, in a shorter introduction.</p>
     <p class="product-price">$0.99 · SAMPLE PACK · instant PDF download</p>
     <div class="hero-buttons">
-      <a href="https://www.etsy.com/listing/4509356836/1956-bavarian-cookbook-sample-3" class="btn-primary" target="_blank" rel="noopener">Get on Etsy →</a>
+      <a href="https://www.etsy.com/listing/4509356836/1956-bavarian-cookbook-sample-3" class="btn-primary" target="_blank" rel="noopener">Buy Sample Pack — $0.99</a>
       <a href="/#story" class="btn-outline">The Story</a>
     </div>
   </div>
@@ -695,7 +727,7 @@
     <div class="story-body">
       <p>
         This cookbook was a 1956 wedding gift to my mother. She's gone now — but her recipes aren't.
-        If you want to see how Babette's Table. works before you buy a full volume, this is the door:
+        If you want to see how Babette's Table works before you buy a full volume, this is the door:
         a sample pack of three soup recipes from <em>Bayerisches Kochbuch</em>, translated from Fraktur,
         with the same headnotes and US measurements as Vol. 1.
       </p>
@@ -741,7 +773,7 @@
 <section id="products">
   <div class="section-inner">
     <div class="section-label">The Collection</div>
-    <h2>More from Babette's Table.</h2>
+    <h2>More from Babette's Table</h2>
     <div class="related-grid">
           <a href="/soups.html">
             <div class="rk">Vol. 1 · $9.95</div>
@@ -778,6 +810,12 @@
   <div class="footer-copy">babettes-table.com · All rights of translation and adaptation reserved</div>
 </footer>
 
+
+
+<div class="buy-bar" role="region" aria-label="Buy sample pack">
+  <span>Start with three recipes</span>
+  <a href="https://www.etsy.com/listing/4509356836/1956-bavarian-cookbook-sample-3" target="_blank" rel="noopener">Buy sample — $0.99</a>
+</div>
 
 </body>
 </html>

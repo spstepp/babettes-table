@@ -31,6 +31,26 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://babettes-table.com/meat.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/puddings-strudel.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/yeast-doughs.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/cakes-tortes.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://babettes-table.com/images/title-page.jpg</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -58,6 +78,26 @@
   <url>
     <loc>https://babettes-table.com/images/sampler.jpg</loc>
     <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/meat.jpg</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/puddings-strudel.jpg</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/yeast-doughs.jpg</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/cakes-tortes.jpg</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

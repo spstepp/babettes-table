@@ -1,0 +1,38 @@
+/* Design E: Painted Bavarian kitchen (linen, wood, copper, deep red) */
+:root{--cream:#F1E4CC;--near-black:#33200F;--sepia:#6E3A1C;--copper:#B5652E;--red:#8E2A22;--gold:#B5652E;--white:#FAF2E2;--light-rule:#D7BE98}
+html,body{overflow-x:hidden}
+body{font-family:'Vollkorn',Georgia,serif;font-size:20px;color:#33200F;background-color:#EADBC0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 .5h6M0 3.5h6' stroke='%23a07a4c' stroke-opacity='.16'/%3E%3Cpath d='M.5 0v6M3.5 0v6' stroke='%23a07a4c' stroke-opacity='.11'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9 .3' numOctaves='2' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .27 0 0 0 0 .14 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E")}
+nav{background-color:#5A3219;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='120'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .14' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .18 0 0 0 0 .09 0 0 0 0 .03 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='400' height='120' filter='url(%23w)'/%3E%3C/svg%3E"),linear-gradient(180deg,#6b3d1f,#4a2813);border-bottom:3px solid #B5652E}
+nav a{font-family:'Vollkorn',serif;font-weight:600;font-size:.78rem;color:#F4E2C2;letter-spacing:.04em}
+nav a:hover{color:#fff}
+.nav-brand{color:#F4E2C2!important}
+.nav-sample{color:#FFE7C4!important;border-bottom:1px solid #D88A4E}
+.nav-brand,.hero-brand,h2,.volume-title,.recipe-title,.product-card h3,.footer-brand{font-family:'Alegreya',Georgia,serif;font-weight:800;color:#6E3A1C}
+.hero-brand,.volume-title{color:#8E2A22}
+#hero,.volume-hero{background:transparent}
+.hero-frame,.book-block,.volume-hero .cover-wrap{position:relative;border:2px solid #B5652E;background:#FAF2E2 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 .5h6M0 3.5h6' stroke='%23a07a4c' stroke-opacity='.10'/%3E%3Cpath d='M.5 0v6M3.5 0v6' stroke='%23a07a4c' stroke-opacity='.07'/%3E%3C/svg%3E");box-shadow:0 0 0 6px #FAF2E2,0 0 0 8px #8E2A22,0 14px 34px rgba(51,32,15,.3)}
+.hero-frame::before{border:1px dashed #B5652E;inset:12px}
+.book-block{padding:2rem 2.2rem;border-top:10px solid transparent;border-image:none}
+.book-block::before{content:'';position:absolute;left:-2px;right:-2px;top:-12px;height:12px;background:repeating-linear-gradient(90deg,rgba(142,42,34,.85) 0 10px,transparent 10px 20px),repeating-linear-gradient(0deg,rgba(142,42,34,.55) 0 6px,#FAF2E2 6px 12px)}
+.hero-ornament,.section-label,.volume-kicker,.recipe-number{color:#B5652E;letter-spacing:.18em}
+.section-label,.volume-kicker,.product-card-label{font-family:'Vollkorn',serif;font-weight:600;font-size:.72rem;text-transform:uppercase;color:#8E2A22}
+h2::after,.volume-title::after{content:'';display:block;width:120px;height:8px;margin:.5rem 0 0;background:repeating-linear-gradient(90deg,#8E2A22 0 8px,#E9C6B4 8px 16px)}
+h2[style*="center"]::after,.text-center h2::after{margin:.5rem auto 0}
+.gold-rule,.gold-rule-thin{border:0;height:10px;background:repeating-linear-gradient(90deg,rgba(142,42,34,.85) 0 10px,transparent 10px 20px),repeating-linear-gradient(0deg,rgba(142,42,34,.5) 0 5px,#F7EAD2 5px 10px)}
+.btn-primary{background:#8E2A22 linear-gradient(180deg,#a3352b,#7a221b);color:#FFF3E0;border:1px solid #5a1712;box-shadow:inset 0 0 0 3px #8E2A22,inset 0 0 0 4px #E3A06A;font-family:'Vollkorn',serif;font-weight:700}
+.btn-primary:hover{background:#5a1712}
+.btn-outline{border:2px solid #B5652E;color:#7a3f1a;font-family:'Vollkorn',serif;font-weight:600;background:rgba(250,242,226,.7)}
+.product-card{background:#FAF2E2;border:2px solid #B5652E;box-shadow:0 10px 24px rgba(51,32,15,.25);position:relative}
+.product-card::before{content:'';position:absolute;left:0;right:0;top:0;height:8px;z-index:1;background:repeating-linear-gradient(90deg,rgba(142,42,34,.85) 0 8px,transparent 8px 16px),repeating-linear-gradient(0deg,rgba(142,42,34,.5) 0 4px,#FAF2E2 4px 8px)}
+.product-price{color:#8E2A22;font-family:'Alegreya',serif;font-weight:800}
+.artifact img{border:6px solid #FAF2E2;box-shadow:0 0 0 2px #B5652E,0 10px 26px rgba(51,32,15,.35)}
+#recipe{background-color:#E2CDA8;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6'%3E%3Cpath d='M0 .5h6M0 3.5h6' stroke='%23845c30' stroke-opacity='.18'/%3E%3Cpath d='M.5 0v6M3.5 0v6' stroke='%23845c30' stroke-opacity='.12'/%3E%3C/svg%3E");border-top:12px solid #8E2A22;border-bottom:12px solid #8E2A22;border-image:repeating-linear-gradient(90deg,#8E2A22 0 12px,#E9C6B4 12px 24px) 12}
+footer{background-color:#3E2210;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='120'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004 .14' numOctaves='3' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .05 0 0 0 0 .02 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='400' height='120' filter='url(%23w)'/%3E%3C/svg%3E");color:#F1DDBA;border-top:4px solid #B5652E}
+footer a,.footer-brand{color:#F1DDBA!important}
+.site-banner{display:block;margin:0;line-height:0;background:#3E2210;border-bottom:10px solid #8E2A22;border-image:repeating-linear-gradient(90deg,#8E2A22 0 10px,#EAD3C2 10px 20px) 10}
+.site-banner img{display:block;width:100%;height:auto;max-height:300px;object-fit:cover;object-position:50% 55%}
+@media (max-width:640px){.site-banner img{max-height:180px}}
+section,#story,#products,.recipe-hist{background:transparent}
+#products{background:rgba(181,101,46,.08)}
+.product-link{background:#8E2A22;color:#FFF3E0;font-family:'Vollkorn',serif;font-weight:700}
+.product-link:hover{background:#5a1712}

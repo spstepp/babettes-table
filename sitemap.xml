@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://babettes-table.com/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/the-book.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/soups.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/potatoes.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/desserts.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/sampler.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/meat.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/puddings-strudel.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/yeast-doughs.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/cakes-tortes.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/fish.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/one-pot.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/vegetarian.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/sauces.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -128,6 +133,11 @@
   <url>
     <loc>https://babettes-table.com/images/vegetarian.jpg</loc>
     <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/sauces.jpg</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

@@ -2,82 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://babettes-table.com/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/the-book.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/soups.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/potatoes.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/desserts.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/sampler.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/meat.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/puddings-strudel.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/yeast-doughs.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/cakes-tortes.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/fish.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/one-pot.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/vegetarian.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/sauces.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/vegetables.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://babettes-table.com/salads.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/christmas-cookies.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/drinks-spreads.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/invalid-cookery.html</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -158,6 +173,21 @@
   <url>
     <loc>https://babettes-table.com/images/salads.jpg</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/christmas-cookies.jpg</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/drinks-spreads.jpg</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/images/invalid-cookery.jpg</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

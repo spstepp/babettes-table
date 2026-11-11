@@ -1,193 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://babettes-table.com/cakes-tortes</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/christmas-cookies</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/desserts</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/drinks-spreads</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://babettes-table.com/fish</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://babettes-table.com/</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/the-book.html</loc>
+    <loc>https://babettes-table.com/invalid-cookery</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/soups.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/meat</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/potatoes.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/one-pot</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/desserts.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/potatoes</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/sampler.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/puddings-strudel</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/meat.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/salads</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/puddings-strudel.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/sampler</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/yeast-doughs.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/sauces</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/cakes-tortes.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/soups</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/fish.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/the-book</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/one-pot.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/vegetables</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/vegetarian.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/vegetarian</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://babettes-table.com/sauces.html</loc>
-    <lastmod>2026-11-03</lastmod>
+    <loc>https://babettes-table.com/yeast-doughs</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/vegetables.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/salads.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/christmas-cookies.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/drinks-spreads.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/invalid-cookery.html</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/title-page.jpg</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/the-book-cover.jpg</loc>
-    <lastmod>2026-09-07</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/soups.jpg</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/potatoes.jpg</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/desserts.jpg</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/sampler.jpg</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/meat.jpg</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/puddings-strudel.jpg</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/yeast-doughs.jpg</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/cakes-tortes.jpg</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/fish.jpg</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/one-pot.jpg</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/vegetarian.jpg</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/sauces.jpg</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/vegetables.jpg</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/salads.jpg</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/christmas-cookies.jpg</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/drinks-spreads.jpg</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://babettes-table.com/images/invalid-cookery.jpg</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
   </url>
 </urlset>

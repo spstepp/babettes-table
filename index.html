@@ -129,8 +129,17 @@
       font-size: 1rem;
       color: var(--sepia);
       font-style: italic;
-      margin-bottom: 2rem;
+      margin-bottom: 0.85rem;
       letter-spacing: 0.04em;
+    }
+
+    .hero-answer {
+      font-size: 0.98rem;
+      color: var(--sepia);
+      line-height: 1.55;
+      margin: 0 auto 1.75rem;
+      max-width: 36em;
+      overflow-wrap: break-word;
     }
 
     .hero-ornament {
@@ -499,9 +508,13 @@
 
     /* ── Responsive ───────────────────────────────────────────────────── */
     @media (max-width: 600px) {
+      #hero { padding: 2rem 1.25rem 2.25rem; }
       .hero-brand { font-size: 1.9rem; }
-      .hero-frame { padding: 2.5rem 1.5rem; }
-      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-frame { padding: 1.75rem 1.25rem; }
+      .hero-sub { margin-bottom: 0.65rem; }
+      .hero-answer { font-size: 0.92rem; margin-bottom: 1.15rem; }
+      .hero-hook { margin-bottom: 1.25rem; }
+      .hero-buttons { flex-direction: column; align-items: center; margin-bottom: 1.25rem; }
       nav {
         padding: 0.75rem 1rem;
         flex-wrap: wrap;
@@ -537,6 +550,7 @@
   <div class="hero-frame">
     <div class="hero-brand">Babette's Table</div>
     <div class="hero-sub">A Bavarian Kitchen · 1956</div>
+    <p class="hero-answer">Is there an English translation of Hofmann's <em>Bayerisches Kochbuch</em>? Not a published one that we know of. We offer the 1956 book in English, one chapter per PDF.</p>
     <hr class="gold-rule-thin">
     <p class="hero-hook">
       "This cookbook was a 1956 wedding gift to my mother.<br>

@@ -85,6 +85,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Is there an English translation of Hofmann's Bayerisches Kochbuch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not a published one that we know of. Babette's Table offers the 1956 book in English, one chapter per PDF, in 16 volumes plus a three-recipe Sampler. This is not the Culinary Arts Institute 1956 German and Viennese Cookbook."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Is Babette's Table the Vermont charcuterie shop?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -306,6 +314,45 @@
       font-style: italic;
       line-height: 1.65;
     }
+
+    .direct-answer {
+      text-align: left;
+      margin: 1.25rem auto 1.75rem;
+      padding: 1.1rem 1.25rem;
+      background: var(--cream);
+      border-left: 2px solid var(--gold);
+      max-width: 640px;
+    }
+
+    .direct-answer h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .direct-answer h2::after { display: none; }
+
+    .direct-answer p {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--sepia);
+      margin: 0;
+      overflow-wrap: break-word;
+    }
+
+    .direct-answer-links {
+      margin-top: 0.9rem !important;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+    }
+
+    .direct-answer-links a {
+      color: var(--sepia);
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+    }
+
+    .direct-answer-links a:hover { color: var(--gold); }
 
     #main {
       background: var(--white);
@@ -552,6 +599,12 @@
         padding: 5px;
         margin-bottom: 1.25rem;
       }
+      .direct-answer {
+        padding: 0.9rem 1rem;
+        margin: 1rem auto 1.25rem;
+      }
+      .direct-answer h2 { font-size: 1.05rem; }
+      .direct-answer p { font-size: 0.95rem; }
       .button-row { flex-direction: column; align-items: center; }
     }
   </style>
@@ -573,11 +626,19 @@
 
 <section id="hero-page">
   <div class="hero-page-inner">
+    <div class="section-label">The Book</div>
+    <h1>1956 Bavarian Cookbook — English PDF of Hofmann's Bayerisches Kochbuch</h1>
+    <div class="direct-answer">
+      <h2>Is there an English translation of Hofmann's Bayerisches Kochbuch?</h2>
+      <p>Not a published one that we know of. Babette's Table offers the 1956 book in English, one chapter per PDF, in 16 volumes plus a three-recipe Sampler. This is not the Culinary Arts Institute 1956 <em>German and Viennese Cookbook</em>.</p>
+      <p class="direct-answer-links">
+        <a href="https://www.etsy.com/listing/4509356836" target="_blank" rel="noopener">Sampler — $0.99</a>
+        <a href="https://www.etsy.com/listing/4604619069" target="_blank" rel="noopener">Vol. 14, Christmas Cookies — $9.95</a>
+      </p>
+    </div>
     <div class="cover-wrap">
       <img src="/images/the-book-cover.jpg" width="1200" height="1200" alt="Babette's Table cover for Bayerisches Kochbuch English PDF — Maria Hofmann 1956 Bavarian cookbook translation">
     </div>
-    <div class="section-label">The Book</div>
-    <h1>1956 Bavarian Cookbook — English PDF of Hofmann's Bayerisches Kochbuch</h1>
     <p class="lede">Maria Hofmann · 26th edition · Birken-Verlag, Munich · 1956 · English PDF chapter volumes · not Vermont charcuterie</p>
   </div>
 </section>

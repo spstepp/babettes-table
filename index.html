@@ -94,10 +94,21 @@ a:hover { color: var(--oxblood-hover); }
   outline-offset: 3px;
 }
 nav :focus-visible,
-footer :focus-visible,
+footer :focus-visible {
+  outline-color: var(--focus-dark);
+}
+/* Filled buttons sit on light surfaces: blue outer ring, cream gap against the oxblood */
 .btn-primary:focus-visible,
 .product-link:focus-visible {
+  outline-color: var(--focus-light);
+  box-shadow: 0 0 0 3px var(--focus-dark);
+}
+nav .btn-primary:focus-visible,
+footer .btn-primary:focus-visible,
+nav .product-link:focus-visible,
+footer .product-link:focus-visible {
   outline-color: var(--focus-dark);
+  box-shadow: none;
 }
 
 .skip-link {
@@ -944,7 +955,7 @@ footer {
         <div class="product-price">$0.99 · SAMPLE PACK · instant PDF download</div>
         <div class="product-actions">
           <a href="https://www.etsy.com/listing/4509356836/1956-bavarian-cookbook-sample-3" class="btn-primary" target="_blank" rel="noopener">Buy sample — $0.99</a>
-          <a href="/sampler.html" class="product-link">Learn more</a>
+          <a href="/sampler.html" class="btn-outline">Learn more</a>
         </div>
       </div>
 

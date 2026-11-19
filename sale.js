@@ -1,8 +1,8 @@
 /* Etsy sale display. Shows the sale price on marked prices until the sale ends.
-   Sale: 30% off Vols. 2, 3, 9, 11, 14, 15 on Etsy, through Nov 25, 2026 (Mountain time).
+   Sale: 30% off Vols. 2, 3, 9, 11, 14, 15 on Etsy, through Dec 9, 2026 (Mountain time).
    Before and after the sale, and with scripts off, pages show the normal $9.95. */
 (function () {
-  var END = new Date('2026-11-26T00:00:00-07:00'); // end of Nov 25, Mountain Standard Time
+  var END = new Date('2026-12-10T00:00:00-07:00'); // end of Dec 9, Mountain Standard Time
   if (Date.now() >= END.getTime()) return;
   var els = document.querySelectorAll('[data-sale-vol]');
   if (!els.length) return;
@@ -23,7 +23,7 @@
     f.appendChild(document.createTextNode(' '));
     f.appendChild(span('sale-sr', 'Sale price '));
     f.appendChild(span('sale-now', '$6.96'));
-    if (el.hasAttribute('data-sale-note')) f.appendChild(document.createTextNode(' (30% off on Etsy through Nov 25)'));
+    if (el.hasAttribute('data-sale-note')) f.appendChild(document.createTextNode(' (30% off on Etsy through Dec 9)'));
     f.appendChild(document.createTextNode(parts.slice(1).join('$9.95')));
     p.replaceChild(f, hit);
   }
